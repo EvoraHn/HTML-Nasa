@@ -30,14 +30,13 @@
 
         </ul>
 
-
     </div>
 
     <!--!Informacion de la pagina-->
-    <div class="Contenido">
+    <div class="Contenido" >
         <div class="ContenedorDeEstrella">
             <div class="TituloEstrella">
-                <h1>
+                <h1 >
                     Registro de una estrella 
                 </h1>
             </div>
@@ -55,12 +54,12 @@
             </div>
 
             <div class="Datos2">
-                <form action="">
+                <form style="padding: 1em;">
                     
-                    Copias del certificado: <br>
+                    <p >Copias del certificado: </p>
                     <input type="text" name="Copias" id="Copias">
-                    <br>
-                    Entrega: <br>
+                    <p >
+                    Entrega: </p>
                     <input type="text" name="Entrega" id="Entrega">
                 </form>
             </div>
@@ -68,14 +67,15 @@
         </div>
             
         <div class="DatosDePie" >
-            <form>
-                Mensaje personalizado:
-                <input type="text" name="Mensaje" id="Mensaje">
-                <br>
-                Mapa Estelar: <br>
-                <input type="radio" name="MapaEstelar" id="MapaEstelar"> Si <br>
-                <input type="radio" name="MapaEstelar" id="MapaEstelar">No <br>
-            
+            <form style="padding: 1em;">
+                <p>Mensaje personalizado:</p>
+                <input id="CajaDeMensajePersonalizado" type="text" name="Mensaje" id="Mensaje">
+                <p>
+                <div style=" background-color: rgba(115, 115, 129, 0.425); flex: 1;">
+                    <P>Mapa Estelar: </p>
+                    <input style="left: 20em;" type="radio" name="MapaEstelar" id="MapaEstelar"> <span> Si </span> 
+                    <input style="left: 20em;" type="radio" name="MapaEstelar" id="MapaEstelar"> <span> No </span> 
+                </div>
             </form>
         </div>
 
@@ -83,33 +83,35 @@
     </div>
 
     <div class="ContenedorDeContacto">
+
         <div clas="TituloContacto">
                 <h1>
-                    Contactate con nostros.
+                    Contactate con nostros
                 </h1>
         </div>
+
         <div class="DatosSimples">
             
             <div class="Datos1">
                 <form style="padding: 1em;" >
-                    Nombre:
-                    <br>
-                    <input type="text" name="Nombre" id="Nombre">
-                    <br>
-                    Telefono:
-                    <br>
+                    <p >Nombre:</p>
+                    
+                    <input style="margin: 0em;" type="text" name="Nombre" id="Nombre">
+                    
+                    <p >Telefono:</p>
+                    
                     <input type="text" name="Telefono" id="Telefono">
-                    <br>
-                    Correo Electronico: <br>
+                    
+                <p>Correo Electronico: </p>
                     <input type="Email" name="Email" id="Email">
-                    <br>
+                    
                 </form>
             </div>
 
             <div class="Datos2">
-                <form action="">
-                    Mensaje: <br>
-                    <input type="Mensaje" name="Mensaje" id="Mensaje">
+                <form style="padding: 1em;" action="">
+                    <P>Mensaje: </P>
+                    <input style="height: 14.6em; width: 98%;" type="Mensaje" name="Mensaje" id="Mensaje">
                 </form>
             </div>
             
@@ -118,6 +120,70 @@
     <!--Contenedor-->
     </div>
 
+    <div class="SalaDeRedaccion">
+        <table style="margin: 2em;">
+            <thead>
+                <caption>
+                    <h2>
+                    Salas de redacción del Centro de la NASA
+                    </h2>
+                </caption>
+                <tr>
+                    <th style="background-color: rgba(228, 128, 220, 0.473);" colspan="1" >Lugar</th>
+                    <th style="background-color: rgba(228, 128, 220, 0.473);" colspan="5">Descripcion</th>
+                    <th style="background-color: rgba(228, 128, 220, 0.473);" colspan="4" >Telefono</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="background-color: rgba(228, 128, 220, 0.473); text-align: center;" colspan="1" >
+                        Centro de investigación
+                        <br>
+                        Ames El Centro de investigación
+                    </td>
+                    <td  colspan="5" >
+                        Ames realiza investigaciones críticas y desarrolla tecnologías habilitadoras <br> en astrobiología, tecnología de la información, biología espacial
+                        <br>fundamental, nanotecnología, gestión del tráfico aéreo, sistemas de protección <br> térmica y factores humanos esenciales para prácticamente<br> todas las misiones de la NASA.
+                    </td>
+                    <td colspan="4">
+                        650-604-4789
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: rgba(228, 128, 220, 0.473); text-align: center;" colspan="1" >
+                        Centro de investigación
+                        <br>
+                        Ames El Centro de investigación
+                    </td>
+                    <td colspan="5" >
+                        Ames realiza investigaciones críticas y desarrolla tecnologías habilitadoras <br> en astrobiología, tecnología de la información, biología espacial
+                        <br>fundamental, nanotecnología, gestión del tráfico aéreo, sistemas de protección <br> térmica y factores humanos esenciales para prácticamente<br> todas las misiones de la NASA.
+                    </td>
+                    <td colspan="4">
+                        650-604-4789
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style=" background-color: rgba(228, 128, 220, 0.473); text-align: center;" colspan="1" >
+                        Centro de investigación
+                        <br>
+                        Ames El Centro de investigación
+                    </td>
+                    <td colspan="5" >
+                        Ames realiza investigaciones críticas y desarrolla tecnologías habilitadoras <br> en astrobiología, tecnología de la información, biología espacial
+                        <br>fundamental, nanotecnología, gestión del tráfico aéreo, sistemas de protección <br> térmica y factores humanos esenciales para prácticamente<br> todas las misiones de la NASA.
+                    </td>
+                    <td colspan="4">
+                        650-604-4789
+                    </td>
+                </tr>
+
+            </tbody>
+
+        </table>
+    </div>
 
     <!--Cierre-->
 </div>
@@ -129,9 +195,18 @@
 
 
     <div class="Pie">
-       <div class="ImagenPie">
-     
-       </div>
+        <div class="ImagenPie">
+        
+        </div>
+        <div style=" color: white; height: 1em; left: 10%; width: 9em; bottom: 6em; position: relative;">
+            AJEM develop
+        </div>
+        
+        <div  style=" color: white; height: 1em; left: 40%; width: 30em; bottom: 5em; position: relative;">
+            Facebook
+            Twitter
+            Instagram
+        </div>
     </div>
 
 </div >

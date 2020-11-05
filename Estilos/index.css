@@ -23,15 +23,18 @@
     left: 10%;
     right: 10%;
     width: 80%;
-    height: 179em;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
+    height: 149em;
+    background:black;
     
     /*Caja principal*/
 
 }
 
 
-
+p
+{
+    color: white;
+}
 
 
 .Pie
@@ -39,8 +42,9 @@
     position: absolute;
     width: 100%;
     height: 10em;
-    top: 189em;
+    top: 159em;
     right: 0em;
+    background-color: black;
 
 }
 
@@ -58,6 +62,11 @@ position: relative;
     background-size: 100%, 100%;
     background-repeat: no-repeat;
     
+}
+
+input
+{
+    border-radius: 1em;
 }
 
 /*Encabezado*/
@@ -100,12 +109,12 @@ position: relative;
     display: flex;
     top: 3em;
     flex-direction: column;
-    
+    left:4em;
     margin: 7em;
     
-    width: 80%;
-    height: 60em;
-    background-color: chocolate;
+    width: 70%;
+    height: 50em;
+    background-color:  rgba(115, 115, 129, 0.425);
 }
 
 .TituloEstrella
@@ -115,7 +124,7 @@ position: relative;
     height: 2em;
     flex: 1;
     margin: 3em;
-    background-color: cornflowerblue;
+    left: 3em;
 }
 
 .NombreDeEstrella
@@ -134,8 +143,9 @@ position: relative;
     width: 80%;
     height: 2em;
     flex: 3;
+    left: 2em;
     margin: 3em;
-    background-color: cornflowerblue;
+    
 }
 
 .DatosDePie
@@ -144,9 +154,10 @@ position: relative;
     width: 80%;
     height: 2em;
     flex: 3;
+    left: 4em;
     flex-direction: row;
-    margin: 3em;
-    background-color: cornflowerblue;
+    margin: 1em;
+    bottom: 3em;
 }
 .Datos1
 {
@@ -156,7 +167,7 @@ position: relative;
     width: 40%;
     float: left;
     left: 5%;
-    background-color: deeppink;
+    background-color: rgba(115, 115, 129, 0.425);
 }
 
 
@@ -168,7 +179,7 @@ position: relative;
     height: 100%;
     float: left;
     width: 40%;
-    background-color: deeppink;
+    background-color: rgba(115, 115, 129, 0.425);
 }
 
 .ContenedorDeContacto
@@ -177,12 +188,12 @@ position: relative;
     display: flex;
     top: 3em;
     flex-direction: column;
-    
+    left:4em;
     margin: 7em;
     
-    width: 80%;
+    width: 70%;
     height: 30em;
-    background-color: chocolate;
+    background-color:  rgba(115, 115, 129, 0.425);
 }
 
 .TituloContacto
@@ -192,13 +203,14 @@ position: relative;
     height: 2em;
     flex: 1;
     margin: 3em;
-    background-color: cornflowerblue;
+    
 }
 
 
 
 h1
 {
+    
     font-family: Verdana, Arial;
     color: #e650b1;
     text-align: center;
@@ -208,6 +220,67 @@ h1
 {
     width: 80%;
     height: 2em;
+}
+
+.Datos2 form input
+{
+    width: 80%;
+    height: 2em;
+    left: 80%;
+}
+
+form p
+{
+    position: relative;
+    font-family: Arial;
+    font-size: 1em;
+}
+
+span
+{
+    position: relative;
+    font-family: Arial;
+    color: white;
+}
+
+#CajaDeMensajePersonalizado
+{
+    left: 2em;
+    height: 8em;
+    width: 99%;
+}
+.SalaDeRedaccion
+{
+    position: relative;
+    display: flex;
+    top: 3em;
+    flex-direction: column;
+    left:4em;
+    margin: 7em;
+    
+    width: 70%;
+    height: 28em;
+    background-color: rgba(120, 120, 207, 0.349);
+    border-radius: 2em;
+}
+
+h2
+{
+    font-family: Verdana, Arial;
+    color: white;
+    
+}
+th
+{
+    font-family: Verdana;
+    color: white;
+}
+
+tr td 
+{
+    font-family: Arial;
+    font-size: 80%;
+    color: white;
 }
 
 /*
