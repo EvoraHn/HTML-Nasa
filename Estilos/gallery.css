@@ -29,3 +29,13 @@ body
 {
     background-color: black;
 }
+.PiePag
+{
+    width: auto;
+    height: 8.125em;
+    top: 190em;
+    left: 0em;
+    right: 0em;
+    position: relative;
+    background-color: black;
+}
