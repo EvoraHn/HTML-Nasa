@@ -1,0 +1,88 @@
+/*Partes pricipales*/
+
+.Contenedor
+{
+    background-color: black;
+}
+
+.Encabezado
+{
+    /*Canal alfa de transpariencia*/
+    width: auto;
+    height: 9em;
+    top: 0em;
+    left: 0em;
+    right: 0em;
+    background-color: black;
+}
+
+.Contenido
+{
+    position: absolute;
+    top: 9.5em;
+    left: 10%;
+    right: 10%;
+    width: 80%;
+    height: 90%;
+
+    
+    /*Caja principal*/
+
+}
+
+
+p
+{
+    color: white;
+}
+
+
+.Pie
+{
+    position: absolute;
+    width: 100%;
+    height: 10em;
+    top: 100%;
+    right: 0em;
+    background-color: black;
+
+}
+
+input
+{
+    border-radius: 1em;
+}
+
+/*Encabezado*/
+.Logo
+{
+    position: relative;
+    top: 12%;
+    float: left;
+    height: 70%;
+    bottom: 10%;
+    left: 0%;
+}
+
+.MenuDePaginas
+{
+    font-family: Verdana, Arial;
+    position: relative;
+    top: 1.5em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    height: 4em;
+    list-style: none;
+    margin: 0; 
+    font-size: 1.5em;
+    
+}
+
+.MenuDePaginas a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: white;
+}
+
