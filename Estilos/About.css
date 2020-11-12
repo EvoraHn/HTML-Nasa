@@ -26,8 +26,12 @@
     margin-top: 1em;
 }
 .imagenLogo{
-    width: 15em;
-    height: 7em;   
+    position: relative;
+    top: 12%;
+    float: left;
+    height: 70%;
+    bottom: 10%;
+    left: 0%; 
 }
 
 .Pie
@@ -82,9 +86,11 @@
     position: relative;
     font-family: Verdana, Arial;
     top: 2.7em;
-    font-size: 1.5em;
-    left: 30em;
+    font-size: 1.3em;
+    left: 45%;
     color: #FFFFFF;
+
+    
 }
 
 .EnlaceGalery
@@ -92,7 +98,7 @@
     position: relative;
     font-family: Verdana, Arial;
     top: 2.7em;
-    font-size: 1.5em;
+    font-size: 1.3em;
     left: 50%;
     color: #FFFFFF;
 
@@ -103,7 +109,7 @@
     position: relative;
     font-family: Verdana, Arial;
     top: 2.7em;
-    font-size: 1.5em;
+    font-size: 1.3em;
     left: 55%;
     color: #FFFFFF;
 
@@ -113,7 +119,7 @@
     position: relative;
     font-family: Verdana, Arial;
     top: 2.7em;
-    font-size: 1.5em;
+    font-size: 1.3em;
     left: 60%;
     color: #FFFFFF;
 
