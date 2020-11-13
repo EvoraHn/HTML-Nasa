@@ -2,6 +2,9 @@
 {
     background: url(../Imagenes/ImagenPrincipal_Home.jpg);
     margin: 0%;
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 .contImagen{
@@ -31,6 +34,12 @@
     left: 0em;
     right: 0em;
     z-index: 1;
+    text-decoration: none;
+}
+
+.head > a
+{
+    text-decoration: none;
 }
 
 .contLogo
