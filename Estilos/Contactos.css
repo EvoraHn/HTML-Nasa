@@ -7,7 +7,6 @@
 
 .Encabezado
 {
-    /*Canal alfa de transpariencia*/
     width: auto;
     height: 9em;
     top: 0em;
@@ -92,7 +91,6 @@ input
     list-style: none;
     margin: 0; 
     font-size: 1.5em;
-    
 }
 
 .MenuDePaginas a {
@@ -111,9 +109,8 @@ input
     flex-direction: column;
     left:4em;
     margin: 7em;
-    
     width: 70%;
-    height: 50em;
+    height: 54em;
     background-color:  rgba(115, 115, 129, 0.425);
 }
 
@@ -121,7 +118,7 @@ input
 {
     position: relative;
     width: 80%;
-    height: 2em;
+    height: 1em;
     flex: 1;
     margin: 3em;
     left: 3em;
@@ -175,7 +172,6 @@ input
 {
     position: relative;
     left: 15%;
-    
     height: 100%;
     float: left;
     width: 40%;
@@ -192,25 +188,13 @@ input
     margin: 7em;
     
     width: 70%;
-    height: 30em;
+    height: 31em;
     background-color:  rgba(115, 115, 129, 0.425);
 }
-
-.TituloContacto
-{
-    position: relative;
-    width: 80%;
-    height: 2em;
-    flex: 1;
-    margin: 3em;
-    
-}
-
 
 
 h1
 {
-    
     font-family: Verdana, Arial;
     color: #e650b1;
     text-align: center;
@@ -249,6 +233,8 @@ span
     height: 8em;
     width: 99%;
 }
+
+
 .SalaDeRedaccion
 {
     position: relative;
@@ -257,7 +243,6 @@ span
     flex-direction: column;
     left:4em;
     margin: 7em;
-    
     width: 70%;
     height: 28em;
     background-color: rgba(120, 120, 207, 0.349);
@@ -281,4 +266,16 @@ tr td
     font-family: Arial;
     font-size: 80%;
     color: white;
+}
+
+.button{
+font-size:10px;
+font-family:Verdana;
+font-weight:bold;
+color:white;
+background:#008DAB;
+border:0px;
+width:30%;
+height: 3em;
+margin: 0.5%;
 }

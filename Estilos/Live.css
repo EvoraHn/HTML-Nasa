@@ -24,9 +24,6 @@
     right: 10%;
     width: 80%;
     height: 90%;
-    
-    /*Caja principal*/
-
 }
 
 
@@ -45,11 +42,6 @@ p
     right: 0em;
     background-color: black;
 
-}
-
-input
-{
-    border-radius: 1em;
 }
 
 /*Encabezado*/
