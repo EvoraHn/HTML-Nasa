@@ -3,17 +3,22 @@
     background-color: black;
 }
 
+
+
+
+a
+{
+ text-decoration: none;
+}
+
 .Encabezado
 {
-    /*Canal alfa de transpariencia*/
     width: auto;
     height: 9em;
-    position: fixed;
     top: 0em;
     left: 0em;
     right: 0em;
-    background-color: #000000;
-    z-index: 1;
+    background-color: black;
 }
 .logo{
     top: 0%;
@@ -46,7 +51,7 @@
     right: 0em;
     
     position: absolute;
-    background-color: #000000;
+    background-color: black;
 }
 .RedesSociales
 {
