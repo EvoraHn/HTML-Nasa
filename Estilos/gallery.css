@@ -1,3 +1,62 @@
+
+.Encabezado
+{
+    width: auto;
+    height: 9em;
+    top: 0em;
+    left: 0em;
+    right: 0em;
+    background-color: black;
+}
+
+.Logo
+{
+    position: relative;
+    top: 12%;
+    float: left;
+    height: 70%;
+    bottom: 10%;
+    left: 0%;
+}
+
+.Pie
+{
+    position: absolute;
+    width: 100%;
+    height: 10em;
+    top: 159em;
+    right: 0em;
+    background-color: pink;
+}
+
+.titulos
+{
+    font-family: Verdana;
+}
+
+.MenuDePaginas
+{
+    font-family: Verdana, Arial;
+    position: relative;
+    top: 1.5em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    height: 4em;
+    list-style: none;
+    margin: 0; 
+    font-size: 1.5em;
+}
+
+.MenuDePaginas a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: white;
+    font-size: 0.9em
+}
+
+
 .fondo
 {
     background-color: black;
@@ -8,7 +67,7 @@
     background-color: black;
     height: 50%;
     width: 50%;
-    
+    border : 1px solid #fff;
 }
 .contenidos
 {
@@ -16,6 +75,8 @@
     margin-left: 25%;
     margin-right: 25%;
     color:#fff;
+
+    font-family: Arial;
 }
 div h4{
     
@@ -29,11 +90,13 @@ body
 {
     background-color: black;
 }
+
 .PiePag
 {
+    position: relative;
     width: auto;
     height: 8.125em;
-    top: 190em;
+    
     left: 0em;
     right: 0em;
     position: relative;
