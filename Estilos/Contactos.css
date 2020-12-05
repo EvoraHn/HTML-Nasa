@@ -3,30 +3,62 @@
 .Contenedor
 {
     background-color: black;
+
 }
 
 .Encabezado
 {
-    width: auto;
-    height: 9em;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 100%;
+    height: 7vh;
     top: 0em;
     left: 0em;
     right: 0em;
-    background-color: black;
+   
+}
+.principal
+{
+    margin: 7vw;
+    position: relative;
+    display: flex;
+    top: 3vh;
+    
+    
+    margin: 7vw;
+    width: 70%;
+
+    flex-direction: column;
+   
+    justify-content: center;
+    
+}
+.bottonPink
+{
+    margin: 2vw;
+    top: 3vh;
+    background: #e650b1;
+    width: 100%;
+    height: 6vw;
+    color: white;
+    font-size: 3vw;
+    border: 0px;
 }
 
+
+li
+{
+    font-size: 1.4vw;
+}
 .Contenido
 {
-    position: absolute;
-    top: 9.5em;
-    left: 10%;
-    right: 10%;
-    width: 80%;
-    height: 149em;
-    background:black;
+    top: 9.5vh;
+    left: 40%;
     
+    width: 80%;
+    background:black;
     /*Caja principal*/
-
 }
 
 
@@ -36,93 +68,77 @@ p
 }
 
 
-.Pie
+footer
 {
-    position: absolute;
+    display: flex;
+    margin: 0em;
+    background-color: var(--primary);
+    color: var(--primaryDark);
     width: 100%;
-    height: 10em;
-    top: 159em;
-    right: 0em;
-    background-color: black;
+    height: 5vh;
+    
+    justify-content: space-around;
+   
 
 }
 
-.ImagenPie
-{
-    
-    
-position: relative;
-    right: 10%;
-    left: 56.5%;
-    width: 33.5%;
-    height: 10em;
-    
-    background-image: url('../Imagenes/DestelloPie.jpeg');
-    background-size: 100%, 100%;
-    background-repeat: no-repeat;
-    
-}
 
 input
 {
-    border-radius: 1em;
+    
+    box-sizing: border-box;
+    margin-top: -4vh;
 }
 
 /*Encabezado*/
 .Logo
 {
     position: relative;
-    top: 12%;
+    
     float: left;
-    height: 70%;
+    height: 8vh;
     bottom: 10%;
-    left: 0%;
+    left: 1%;
 }
 
 .MenuDePaginas
 {
-    font-family: Verdana, Arial;
     position: relative;
-    top: 1.5em;
     display: flex;
-    flex-flow: row wrap;
     justify-content: flex-end;
-    height: 4em;
+
+    font-family: Verdana, Arial;
+    flex-flow: row wrap;
     list-style: none;
-    margin: 0; 
-    font-size: 1.5em;
+
+    margin-left:53vw; 
 }
 
 .MenuDePaginas a {
+    position: relative;
     text-decoration: none;
     display: block;
-    padding: 1em;
+    padding-left: 1vw;
+    top: 0em;
     color: white;
-    font-size: 0.9em
 }
+
 /*Resgistro de estrella*/
 .ContenedorDeEstrella
 {
     position: relative;
     display: flex;
-    top: 3em;
-    flex-direction: column;
-    left:4em;
-    margin: 7em;
+    top: 3vh;
+    
+   
+    margin: 7vw;
     width: 70%;
-    height: 54em;
+    height: 54vw;
     background-color:  rgba(115, 115, 129, 0.425);
+    flex-wrap: wrap;
 }
 
-.TituloEstrella
-{
-    position: relative;
-    width: 80%;
-    height: 1em;
-    flex: 1;
-    margin: 3em;
-    left: 3em;
-}
+
 
 .NombreDeEstrella
 {
@@ -130,101 +146,101 @@ input
     width: 80%;
     height: 2em;
     flex: 2;
-    margin: 3em;
+    margin: 3vw;
     background-color: cornflowerblue;
 }
 
-.DatosSimples
-{
-    position: relative;
+.DatosSimples, .DatosDePie
+{   
+    display: flex;
+    padding-left: 1vw;
+    padding-right: 1vw;
     width: 80%;
-    height: 2em;
-    flex: 3;
-    left: 2em;
-    margin: 3em;
+    height: 18vw;
+    top: 0em;
+    margin-left: 5vw;
+    background-color: azure;
     
+    justify-content: space-between;
 }
 
 .DatosDePie
 {
-    position: relative;
-    width: 80%;
-    height: 2em;
-    flex: 3;
-    left: 4em;
-    flex-direction: row;
-    margin: 1em;
-    bottom: 3em;
-}
-.Datos1
-{
     
-    position: relative;
-    height: 100%;
-    width: 40%;
-    float: left;
-    left: 5%;
-    background-color: rgba(115, 115, 129, 0.425);
+    
+    background-color: coral;
+   
 }
-
-
-.Datos2
-{
-    position: relative;
-    left: 15%;
-    height: 100%;
-    float: left;
-    width: 40%;
-    background-color: rgba(115, 115, 129, 0.425);
-}
-
-.ContenedorDeContacto
+.Datos1, .Datos2
 {
     position: relative;
     display: flex;
-    top: 3em;
-    flex-direction: column;
-    left:4em;
-    margin: 7em;
+    justify-content: space-around;
+    height: 17vw;
+    width: 20vw;
+    margin: 1vw;
+    align-self: center;
     
-    width: 70%;
-    height: 31em;
-    background-color:  rgba(115, 115, 129, 0.425);
+    background-color: rgba(115, 115, 129, 0.425);
 }
 
 
+.ContenedorDeContacto
+{
+
+
+
+    position: relative;
+    display: flex;
+    top: 3vh;
+    
+    
+    margin: 7vw;
+    width: 70%;
+    height: 40vw;
+    background-color:  rgba(115, 115, 129, 0.425);
+    flex-wrap: wrap;
+}
+
+.TituloEstrella
+{
+    position: relative;
+    height: 1vh;
+    background-color: coral;
+}
 h1
 {
+    position: relative;
+    font-size: 2vw;
     font-family: Verdana, Arial;
     color: #e650b1;
     text-align: center;
+    
+   
 }
 
-.Datos1 form input
+
+.Datos1 form input , .dat2
 {
-    width: 80%;
-    height: 2em;
+    width: 8vw;
+    height: 2vw;
 }
 
-.Datos2 form input
-{
-    width: 80%;
-    height: 2em;
-    left: 80%;
-}
 
-form p
+
+p
 {
-    position: relative;
+    
     font-family: Arial;
-    font-size: 1em;
+    font-size: 1vw;
 }
 
 span
 {
-    position: relative;
+   
     font-family: Arial;
     color: white;
+    font-size: 1vw;
 }
 
 #CajaDeMensajePersonalizado
@@ -237,45 +253,56 @@ span
 
 .SalaDeRedaccion
 {
+    
     position: relative;
     display: flex;
-    top: 3em;
-    flex-direction: column;
-    left:4em;
-    margin: 7em;
-    width: 70%;
-    height: 28em;
+    top: 3vh;
+    
+    
+    margin: 7vw;
+    width: 60%;
+    height: 43vw;
+   
+    flex-wrap: wrap;
     background-color: rgba(120, 120, 207, 0.349);
-    border-radius: 2em;
+    border-radius: 2vw;
 }
 
 h2
 {
     font-family: Verdana, Arial;
     color: white;
+    font-size: 1vw;
     
 }
 th
 {
     font-family: Verdana;
     color: white;
+    font-size: 1vw;
+    background-color: rgba(228, 128, 220, 0.473);
 }
 
 tr td 
 {
     font-family: Arial;
-    font-size: 80%;
+    font-size: 1vw;
     color: white;
+
 }
 
+
+
 .button{
-font-size:10px;
-font-family:Verdana;
-font-weight:bold;
-color:white;
-background:#008DAB;
-border:0px;
-width:30%;
-height: 3em;
-margin: 0.5%;
+  
+    font-size:1vw;
+    font-family:Verdana;
+    
+    color:white;
+    background:#008DAB;
+    margin: 1vw;
+    border: 0px;
+    width:10vw;
+    height: 2vw;
+
 }
