@@ -3,6 +3,7 @@
 .Contenedor
 {
     background-color: black;
+
 }
 
 .Encabezado
@@ -24,16 +25,12 @@ li
 }
 .Contenido
 {
-    position: absolute;
-    top: 9.5em;
-    left: 10%;
-    right: 10%;
-    width: 80%;
-    height: 149em;
-    background:black;
+    top: 9.5vh;
+    left: 40%;
     
+    width: 80%;
+    background:black;
     /*Caja principal*/
-
 }
 
 
@@ -43,23 +40,26 @@ p
 }
 
 
-.Pie
+footer
 {
-    top:3vh;
-    position: relative;
+    display: flex;
+    margin: 0em;
+    background-color: var(--primary);
+    color: var(--primaryDark);
     width: 100%;
-    height: 10vh;
-    bottom: 0em;
-    right: 0em;
-    background-color: black;
+    height: 5vh;
+    
+    justify-content: space-around;
+   
 
 }
 
 
 input
 {
-    height: 0.1vw;
-    border-radius: 1vw;
+    
+    box-sizing: border-box;
+    margin-top: -4vh;
 }
 
 /*Encabezado*/
@@ -118,20 +118,21 @@ input
     width: 80%;
     height: 2em;
     flex: 2;
-    margin: 3em;
+    margin: 3vw;
     background-color: cornflowerblue;
 }
 
 .DatosSimples, .DatosDePie
-{
-    padding: 1vh;
-    position: relative;
+{   
+    display: flex;
+    padding-left: 1vw;
+    padding-right: 1vw;
     width: 80%;
-    height: 20vw;
+    height: 18vw;
     top: 0em;
     margin-left: 5vw;
     background-color: azure;
-    display: flex;
+    
     justify-content: space-between;
 }
 
@@ -144,10 +145,13 @@ input
 }
 .Datos1, .Datos2
 {
-    
     position: relative;
-    height: 20vw;
-    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    height: 17vw;
+    width: 20vw;
+    margin: 1vw;
+    align-self: center;
     
     background-color: rgba(115, 115, 129, 0.425);
 }
@@ -184,29 +188,25 @@ h1
    
 }
 
-.Datos1 form input
+
+.Datos1 form input , .dat2
 {
-    width: 80%;
+    width: 8vw;
     height: 2vw;
 }
 
-.dat2
-{
-    width: 80%;
-    height: 2vw;
-    left: 80%;
-}
 
-form p
+
+p
 {
-    position: relative;
+    
     font-family: Arial;
     font-size: 1vw;
 }
 
 span
 {
-    position: relative;
+   
     font-family: Arial;
     color: white;
     font-size: 1vw;
@@ -222,18 +222,19 @@ span
 
 .SalaDeRedaccion
 {
+    
     position: relative;
     display: flex;
     top: 3vh;
-    justify-content: center;
+    
     left:4vh;
-    margin-left: 7vw;
+    margin: 7vw;
     width: 70%;
-    height: 46vw;
+    height: 43vw;
    
     flex-wrap: wrap;
     background-color: rgba(120, 120, 207, 0.349);
-    border-radius: 2em;
+    border-radius: 2vw;
 }
 
 h2
@@ -248,6 +249,7 @@ th
     font-family: Verdana;
     color: white;
     font-size: 1vw;
+    background-color: rgba(228, 128, 220, 0.473);
 }
 
 tr td 
@@ -261,13 +263,14 @@ tr td
 
 
 .button{
-    position: relative;
+  
     font-size:1vw;
     font-family:Verdana;
-    font-weight:bold;
+    
     color:white;
     background:#008DAB;
-
+    margin: 1vw;
+    border: 0px;
     width:10vw;
     height: 2vw;
 
