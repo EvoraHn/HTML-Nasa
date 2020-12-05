@@ -1,13 +1,9 @@
 function RegistroDeUnaEstrella()
 {
     
-    let principal=document.getElementById("ccl");
+    let principal=document.getElementById("Estrella");
     let formulario = `<div class="ContenedorDeEstrella">
-    <div class="TituloEstrella">
-        <h1 >
-            Registro de una estrella 
-        </h1>
-    </div>
+    
 
 <div class="DatosSimples">
     <div class="Datos1">
@@ -35,12 +31,12 @@ function RegistroDeUnaEstrella()
 <div class="DatosDePie" >
     <form >
         <p>Mensaje personalizado:</p>
-        <textarea style="width: 40vw; height: 8vw;"  rows="10" cols="4" placeholder="Escribenos..." id="CajaDeMensajePersonalizado" type="text" name="Mensaje" id="Mensaje"></textarea>
+        <textarea style="width: 46vw; height: 8vw;"  rows="10" cols="4" placeholder="Escribenos..." id="CajaDeMensajePersonalizado" type="text" name="Mensaje" id="Mensaje"></textarea>
         <p>
         
             <P>Mapa Estelar: </p>
-            <input style="left: 20em;" type="radio" name="MapaEstelar" id="MapaEstelar"> <span> Si </span> 
-            <input style="left: 20em;" type="radio" name="MapaEstelar" id="MapaEstelar"> <span> No </span> 
+            <input style="left: 2vw;" type="radio" name="MapaEstelar" id="MapaEstelar"> <span> Si </span> 
+            <input style="left: 2vw;" type="radio" name="MapaEstelar" id="MapaEstelar"> <span> No </span> 
 
         
     </form>
@@ -60,14 +56,8 @@ function Contactanos()
     
     let principal=document.getElementById("ccl");
     let formulario = `<div class="ContenedorDeContacto">
-
-        
-    <h1>
-        Contactate con nostros
-    </h1>
     
     
-    <div class="DatosSimples">
     
     <div class="Datos1">
         <form  >
@@ -88,14 +78,17 @@ function Contactanos()
     <div class="Datos2">
         <form  action="">
             <P>Mensaje: </P>
-            <textarea style="width: 13vw; height: 7vw;" placeholder="Escribenos" cols="10" rows="10" style="height: 14.6em; width: 98%;" type="Mensaje" name="Mensaje" id="Mensaje"></textarea>
+            <textarea style="width: 19vw; height: 8vw;" placeholder="Escribenos" cols="10" rows="10" style="height: 14.6em; width: 98%;" type="Mensaje" name="Mensaje" id="Mensaje"></textarea>
         </form>
-    </div>
-    
-    </div>
-    
-    <input class="button" type="submit" value="Enviar Datos">
+    <span>
+        <input class="button" type="submit" value="Enviar Datos">
     <input class="button" type="reset" value="Limpiar datos">
+    </span>
+    </div>
+    
+    
+    
+    
     <!--Contenedor-->
 </div>`;
 

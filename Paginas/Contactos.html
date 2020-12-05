@@ -1,241 +1,3 @@
-<<<<<<< HEAD
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NASA</title>
-    <link rel="stylesheet" href="../Estilos//Contactos.css">
-</head>
-<body class="Contenedor" >
-<div >
-
-    <div class="Encabezado"> 
-        
-        <a href="../Index.html">
-            <img class="Logo" src="../Imagenes/nasa.png" />
-        </a>
-<!--Acerca De     Gallery     Contactos      Investigaciones-->
-        <ul class="MenuDePaginas" >
-            <li>
-                <a href="./About.html">Acerca de nosotros</a>
-            </li>
-            <li>
-                <a href="./gallery.html">Galeria</a>
-            </li>
-            <li>
-                <a style="color: #E650B1;" href="./Contactos.html">Contacto</a>
-            </li>
-            <li>
-                <a href="./Live.html">NASA Live</a>
-            </li>
-
-        </ul>
-
-    </div>
-
-    <!--!Informacion de la pagina-->
-    <div class="Contenido" >
-        <div class="ContenedorDeEstrella">
-            <div class="TituloEstrella">
-                <h1 >
-                    Registro de una estrella 
-                </h1>
-            </div>
-        
-        <div class="DatosSimples">
-            
-            <div class="Datos1">
-                <form style="padding: 1em;" >
-                    <p>Constelacion:</p>
-                    <input type="text" name="Constelacion" id="Constelacion">
-                    <p>
-                    Fecha Memorable: </p>
-                    <input placeholder="dia/mes/año" type="text" name="Fecha" id="Fecha">
-                </form>
-            </div>
-
-            <div class="Datos2">
-                <form style="padding: 1em;">
-                    
-                    <p >Copias del certificado: </p>
-                    <input placeholder="1-10" type="text" name="Copias" id="Copias">
-                    <p >
-                    Entrega: </p>
-                    <input type="text" name="Entrega" id="Entrega">
-                </form>
-            </div>
-            
-        </div>
-            
-        <div class="DatosDePie" >
-            <form style="padding: 1em;">
-                <p>Mensaje personalizado:</p>
-                <textarea rows="10" cols="10" placeholder="Escribenos..." id="CajaDeMensajePersonalizado" type="text" name="Mensaje" id="Mensaje"></textarea>
-                <p>
-                <div style=" background-color: rgba(115, 115, 129, 0.425); flex: 1;">
-                    <P>Mapa Estelar: </p>
-                    <input style="left: 20em;" type="radio" name="MapaEstelar" id="MapaEstelar"> <span> Si </span> 
-                    <input style="left: 20em;" type="radio" name="MapaEstelar" id="MapaEstelar"> <span> No </span> 
-                    <br>
-                    <br>
-                    <input class="button" type="submit" value="Enviar Datos">
-                    <input class="button" type="reset" value="Limpiar datos">
-                </div>
-            </form>
-        </div>
-
-    <!--Contenedor-->
-    </div>
-
-    <div class="ContenedorDeContacto">
-
-        <div >
-                <h1>
-                    Contactate con nostros
-                </h1>
-        </div>
-
-        <div class="DatosSimples">
-            
-            <div class="Datos1">
-                <form style="padding: 1em;" >
-                    <p >Nombre:</p>
-                    
-                    <input placeholder="Nombre Apellido" style="margin: 0em;" type="text" name="Nombre" id="Nombre"/>
-                    
-                    <p >Telefono:</p>
-                    
-                    <input placeholder="+(Codigo) Numero" type="text" name="Telefono" id="Telefono"/>
-                    
-                <p>Correo Electronico: </p>
-                    <input type="Email" name="Email" id="Email">
-                    
-                </form>
-            </div>
-
-            <div class="Datos2">
-                <form style="padding: 1em;" action="">
-                    <P>Mensaje: </P>
-                    <textarea placeholder="Escribenos" cols="10" rows="10" style="height: 14.6em; width: 98%;" type="Mensaje" name="Mensaje" id="Mensaje"></textarea>
-                    
-                    <input class="button" type="submit" value="Enviar Datos">
-                    <input class="button" type="reset" value="Limpiar datos">
-
-                </form>
-            </div>
-            
-        </div>
-
-    <!--Contenedor-->
-    </div>
-
-    <div class="SalaDeRedaccion">
-        <table style="margin: 2em;">
-            <thead>
-                <caption>
-                    <h2>
-                    Salas de redacción del Centro de la NASA
-                    </h2>
-                </caption>
-                <tr>
-                    <th style="background-color: rgba(228, 128, 220, 0.473);" colspan="1" >Lugar</th>
-                    <th style="background-color: rgba(228, 128, 220, 0.473);" colspan="5">Descripcion</th>
-                    <th style="background-color: rgba(228, 128, 220, 0.473);" colspan="4" >Telefono</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td style="background-color: rgba(228, 128, 220, 0.473); text-align: center;" colspan="1" >
-                        Centro de investigación
-                        <br>
-                        Ames El Centro de investigación
-                    </td>
-                    <td  colspan="5" >
-                        Ames realiza investigaciones críticas y desarrolla tecnologías habilitadoras <br> en astrobiología, tecnología de la información, biología espacial
-                        <br>fundamental, nanotecnología, gestión del tráfico aéreo, sistemas de protección <br> térmica y factores humanos esenciales para prácticamente<br> todas las misiones de la NASA.
-                    </td>
-                    <td colspan="4">
-                        650-604-4789
-                    </td>
-                </tr>
-
-                <tr>
-                    <td style="background-color: rgba(228, 128, 220, 0.473); text-align: center;" colspan="1" >
-                        Centro de investigación
-                        <br>
-                        Ames El Centro de investigación
-                    </td>
-                    <td colspan="5" >
-                        Ames realiza investigaciones críticas y desarrolla tecnologías habilitadoras <br> en astrobiología, tecnología de la información, biología espacial
-                        <br>fundamental, nanotecnología, gestión del tráfico aéreo, sistemas de protección <br> térmica y factores humanos esenciales para prácticamente<br> todas las misiones de la NASA.
-                    </td>
-                    <td colspan="4">
-                        650-604-4789
-                    </td>
-                </tr>
-
-                <tr>
-                    <td style=" background-color: rgba(228, 128, 220, 0.473); text-align: center;" colspan="1" >
-                        Centro de investigación
-                        <br>
-                        Ames El Centro de investigación
-                    </td>
-                    <td colspan="5" >
-                        Ames realiza investigaciones críticas y desarrolla tecnologías habilitadoras <br> en astrobiología, tecnología de la información, biología espacial
-                        <br>fundamental, nanotecnología, gestión del tráfico aéreo, sistemas de protección <br> térmica y factores humanos esenciales para prácticamente<br> todas las misiones de la NASA.
-                    </td>
-                    <td colspan="4">
-                        650-604-4789
-                    </td>
-                </tr>
-
-            </tbody>
-
-            <tfoot>
-                <tr>
-                    <td style="background-color: rgba(228, 128, 220, 0.473); text-align: center;" colspan="1" >
-                        
-                        Ames El Centro de investigación
-                    </td>
-                    <td  colspan="5" >
-                        Ames realiza investigaciones críticas y desarrolla tecnologías habilitadoras <br> 
-                    </td>
-                    <td colspan="4">
-                        650-604-4789
-                    </td>
-                </tr>
-            </tfoot>
-        </table>
-    </div>
-
-    <!--Cierre-->
-</div>
-    
-            
-
-        
-
-
-
-    <div class="Pie">
-        <div class="ImagenPie">
-        
-        </div>
-        <div style=" font-family: Arial; color: white; height: 1em; left: 10%; width: 9em; bottom: 6em; position: relative;">
-            AJEM develop
-        </div>
-        
-        <div  style=" font-family: Arial; color: white; height: 1em; left: 44%; width: 30em; bottom: 2em; position: relative;">
-        <a style="color: white; text-decoration: none;" href="https://www.facebook.com/NASA" target="_self"> Facebook </a> &nbsp;
-        <a  style=" color: white; text-decoration: none;" href="https://twitter.com/NASA?s=09" target="_self">    Twitter </a> &nbsp;
-        <a style=" color: white; text-decoration: none;" href="https://www.instagram.com/nasa/?hl=es-la" target="_self">   Instagram </a>  &nbsp;
-        </div>
-    </div>
-
-</div >
-</body>
-=======
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -271,13 +33,22 @@
         </ul>
     </div>
     <!--!Informacion de la pagina-->
-    <div id="ccl" class="Contenido" >
+    <div  class="Contenido" >
         
-        <div id="principal" class="principal">
-            <button class="bottonPink" onclick="RegistroDeUnaEstrella()">Registro De Una Estrella</button>
-            <button class="bottonPink" onclick="Contactanos()">Contactate Con Nosotros</button>
+        <div id="Estrella" class="principal">
+            <button class="bottonPink" onclick="RegistroDeUnaEstrella()">
+            <text class="TextButton">
+                Registro De Una Estrella
+            </text>
+            </button>
         </div>
-        
+        <div id="ccl" class="principal">
+            <button class="bottonPink" onclick="Contactanos()">
+            <text  class="TextButton">
+                Contactate Con Nosotros
+            </text>
+            </button>
+        </div>
     <!--Contenedor-->
     </div>
     
@@ -368,12 +139,11 @@
         AJEM develop
     </p>
     
-    <p  style=" font-size: 1vw; font-family: Arial; color: white; height: 3vh;  width: 30vw; position: relative;">
+    <p  style=" font-size: calc(0.3em + 1vw); font-family: Arial; color: white; ">
     <a style="color: white; text-decoration: none;" href="https://www.facebook.com/NASA" target="_self"> Facebook </a> &nbsp;
     <a  style=" color: white; text-decoration: none;" href="https://twitter.com/NASA?s=09" target="_self">    Twitter </a> &nbsp;
     <a style=" color: white; text-decoration: none;" href="https://www.instagram.com/nasa/?hl=es-la" target="_self">   Instagram </a>  &nbsp;
     </p>
 </footer>
 </body>
->>>>>>> main
 </html>
