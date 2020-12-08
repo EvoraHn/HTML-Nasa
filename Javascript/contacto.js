@@ -35,21 +35,40 @@ function RegistroDeUnaEstrella()
         <p>
         
             <P>Mapa Estelar: </p>
-            <input style="left: 2vw;" type="radio" name="MapaEstelar" id="MapaEstelar"> <span> Si </span> 
-            <input style="left: 2vw;" type="radio" name="MapaEstelar" id="MapaEstelar"> <span> No </span> 
-
+            <input style="left: 2vw;" value="si" type="radio" name="MapaEstelar" id="MapaEstelar"> <span> Si </span> 
+            <input style="left: 2vw;" value="no" type="radio" name="MapaEstelar" id="MapaEstelar"> <span> No </span> 
+        </p>
         
     </form>
 </div>
             
 
-<input class="button" type="submit" value="Enviar Datos">
+<input onclick="alertEstrella()" class="button" type="submit" value="Enviar Datos">
 <input class="button" type="reset" value="Limpiar datos">`;
 
 
     principal.innerHTML=principal.innerHTML + formulario;
    
 }
+
+function alertEstrella()
+{
+    let constelacion = null;
+    let copias = null;
+    let fecha = null;
+    let entrega= null;
+    let mensaje = null;
+    let mapaEstelar = null;
+
+    constelacion = document.getElementsByName("Constelacion")[0].value;
+    copias = document.getElementsByName("Copias")[0].value;
+    fecha = document.getElementsByName("Fecha")[0].value;
+    entrega = document.getElementsByName("Entrega")[0].value;
+    mensaje = document.getElementsByName("Mensaje")[0].value;
+    mapaEstelar = document.getElementsByName("MapaEstelar")[0].value;
+    alert(constelacion+"\n"+copias+"\n"+fecha+"\n"+entrega+"\n"+mensaje+"\n"+mapaEstelar);
+};
+
 
 function Contactanos()
 {
