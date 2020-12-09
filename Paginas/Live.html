@@ -5,17 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NASA Live</title>
     <link rel="stylesheet" href="../Estilos/Live.css">
+
+    <style>
+      
+        
+        
+ 
+        
+    </style>
 </head>
 <body class="Contenedor" >
-<div style="align-items: center; flex-direction: column ;display: flex;" >
 
-    <div class="Encabezado"> 
-        <a href="../Index.html">
-            <img class="Logo" src="../Imagenes/nasa.png" />
-        </a>
-<!--Acerca De     Gallery     Contactos      Investigaciones-->
-        <ul class="MenuDePaginas" >
-            <li>
+<div style="align-items: center; flex-direction: column ;display: flex;" >
+    <div class="Encabezado">
+        <nav id="fsr-top-bar">
+            <ul>
+               <li>
+                  <a href="#" tabindex="-1">
+                     <svg class="fsr-ic-top-bar-close" role="presentation" aria-hidden="true">
+                        <use xlink:href="#svg-arrow-left"></use>
+                     </svg>
+                     <span class="fsr-top-bar-btn-close-title">Close</span>
+                  </a>
+               </li>
+               <li>
+                <a href="../Index.html">
+                    <img class="Logo" src="../Imagenes/nasa.png" />
+                </a>
+               </li>
+               <li>
                 <a href="./About.html">Acerca de nosotros</a>
             </li>
             <li>
@@ -25,9 +43,17 @@
                 <a  href="./Contactos.html">Contacto</a>
             </li>
             <li>
-                <a style="color: #E650B1;" href="">NASA Live</a>
+                <a style="color: #E650B1;" href="./Live.html">NASA Live</a>
             </li>
-        </ul>
+
+               <li>
+                  <a id="fsr-top-bar-btn-open" href="#fsr-top-bar">
+                    
+                     <span class="fsr-top-bar-btn-opwqqqqqqqqqqen-title"> Menu</span>
+                  </a>
+               </li>
+            </ul>
+         </nav>
     </div>
     <!--!Informacion de la pagina-->
     <div class="Contenido" > 

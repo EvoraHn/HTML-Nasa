@@ -53,20 +53,20 @@ function RegistroDeUnaEstrella()
 
 function alertEstrella()
 {
-    let constelacion = null;
-    let copias = null;
-    let fecha = null;
-    let entrega= null;
-    let mensaje = null;
-    let mapaEstelar = null;
+    const estrella =
+    [
+        {
+            constelacion: document.getElementsByName("Constelacion")[0].value,
+            copias: document.getElementsByName("Copias")[0].value,
+            fecha: document.getElementsByName("Fecha")[0].value,
+            entrega: document.getElementsByName("Entrega")[0].value,
+            mensaje: document.getElementsByName("Mensaje")[0].value,
+            mapaEstelar: document.getElementsByName("MapaEstelar")[0].value,
+        }
+    ];
+    
 
-    constelacion = document.getElementsByName("Constelacion")[0].value;
-    copias = document.getElementsByName("Copias")[0].value;
-    fecha = document.getElementsByName("Fecha")[0].value;
-    entrega = document.getElementsByName("Entrega")[0].value;
-    mensaje = document.getElementsByName("Mensaje")[0].value;
-    mapaEstelar = document.getElementsByName("MapaEstelar")[0].value;
-    alert(constelacion+"\n"+copias+"\n"+fecha+"\n"+entrega+"\n"+mensaje+"\n"+mapaEstelar);
+    alert(`${estrella[0].constelacion} \n ${estrella[0].copias} \n ${estrella[0].fecha} \n ${estrella[0].entrega} \n ${estrella[0].mensaje} \n ${estrella[0].mapaEstelar} `);
 };
 
 

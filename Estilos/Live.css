@@ -16,7 +16,311 @@
     top: 0em;
     left: 0em;
     right: 0em;
+  
 }
+
+li{
+    color:white;
+}
+
+
+/* Nuevo encabezado */
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+
+  a:focus {
+    outline: none;
+  }
+
+  
+  
+  /* FSR Top Bar. */
+  
+  #fsr-top-bar {
+    background-color: transparent;
+    font-size: 12px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+
+  }
+  
+  @media screen and (min-width: 768px) {
+    #fsr-top-bar {
+      border-bottom: 1px solid #e2e2e2;
+      margin: auto;
+      position: relative;
+      width: 94%;
+    }
+  }
+  
+  #fsr-top-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  @media screen and (min-width: 768px) {
+    #fsr-top-bar ul {
+      display: inline-block;
+    }
+  }
+  
+  #fsr-top-bar li {
+    display: none;
+    color: white;
+    
+  }
+  
+  @media screen and (min-width: 768px) {
+    #fsr-top-bar li {
+      display: block;
+      float: left;
+    }
+  }
+  
+  #fsr-top-bar li:first-child {
+    display: none;
+    text-align: right;
+  }
+  
+  #fsr-top-bar li:last-child {
+    display: block;
+    padding: 3%;
+  }
+  
+  @media screen and (min-width: 768px) {
+    #fsr-top-bar li:last-child {
+      display: none;
+    }
+  }
+  
+  #fsr-top-bar li:first-child svg.fsr-ic-top-bar-close,
+  #fsr-top-bar li:last-child svg.fsr-ic-top-bar-burguer {
+    fill: #555;
+    height: 24px;
+    position: relative;
+    top: 7px;
+    width: 24px;
+  }
+  
+  #fsr-top-bar a {
+    background-color: transparent;
+    color: #555;
+    display: inline-block;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    line-height: 44px;
+    padding: 0 .9rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  
+  #fsr-top-bar .fsr-top-bar-wrapper {
+    display: none;
+  }
+  
+  #fsr-top-bar:target {
+    background-color: #353535;
+    bottom: 0;
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+  }
+  
+  #fsr-top-bar:target li {
+    display: block;
+  }
+  
+  #fsr-top-bar:target li:not(:first-child) {
+    margin-top: 2px;
+  }
+  
+  #fsr-top-bar:target li:first-child {
+    display: block;
+  }
+  
+  #fsr-top-bar:target li:first-child svg.fsr-ic-top-bar-close {
+    fill: #fff;
+  }
+  
+  #fsr-top-bar:target li:last-child {
+    display: none;
+  }
+  
+  #fsr-top-bar:target a {
+    color: #fff;
+    width: 100%;
+  }
+  
+  @media screen and (min-width: 768px) {
+    #fsr-top-bar:target a {
+      color: #555;
+    }
+  }
+  
+  #fsr-top-bar:target .fsr-top-bar-wrapper {
+    display: block;
+    height: 200px;
+  }
+  
+  #fsr-top-bar:target .fsr-top-bar-ads {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  #fsr-top-bar:target .fsr-top-bar-ads:after {
+    background: rgba(0, 0, 0, 0.4);
+    content: "";
+    height: 100%;
+    position: absolute;
+    top: 46px;
+    width: 100%;
+  }
+  
+  #fsr-top-bar:target .fsr-top-bar-head {
+    color: white;
+    margin: 1em 0 .5em 0;
+    padding: .5em 0;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  #fsr-top-bar:target .fsr-top-bar-head-img {
+    border-radius: 50%;
+    height: 36px;
+    margin-left: 10px;
+    width: 36px;
+  }
+  
+  #fsr-top-bar:target .fsr-top-bar-head-title {
+    padding-left: .5rem;
+    position: relative;
+    top: 2px;
+  }
+  
+  #fsr-top-bar:target .fsr-top-bar-img {
+    height: 200px;
+    padding-top: 2px;
+    position: absolute;
+    width: 100%;
+  }
+  
+  #fsr-top-bar:target .fsr-top-bar-text {
+    color: #fff;
+    margin: 4rem 0;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  #fsr-top-bar:target ~ article[role=application] {
+    display: none;
+  }
+  
+  @media screen and (min-width: 500px) {
+    #fsr-top-bar:target ~ article[role=application] {
+      display: block;
+    } 
+  }
+  
+  @media screen and (min-width: 500px) {
+    #fsr-top-bar:target {
+      left: -280px;
+      transform: translateX(280px);
+      transition: transform 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+      webkit-transform: translateX(280px);
+      webkit-transition: transform 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+      width: 280px;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    #fsr-top-bar:target {
+      background-color: transparent;
+      border-bottom: 1px solid #da28cb;
+      height: 52px;
+      overflow: hidden;
+      position: relative;
+      width: 94%;
+    }
+    #fsr-top-bar:target a {
+      width: auto;
+    }
+    #fsr-top-bar:target li:first-child {
+      display: none;
+    }
+  }
+  
+  
+  /* Button Pulsing */
+  
+  .btn-pulsing {
+    width: 96px;
+    height: 96px;
+    margin: auto;
+    display: block;
+    border: none;
+    border-radius: 50%;
+    background: transparent;
+    cursor: pointer;
+   
+    -webkit-animation: pulse 1.5s infinite;
+  }
+  
+  .pulse-button:hover {
+    -webkit-animation: none;
+  }
+  
+  
+  /* Button Pulsing (Keyframes) */
+  
+  @-webkit-keyframes pulse {
+    0% {
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+    70% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      box-shadow: 0 0 0 13px rgba(90, 153, 212, 0);
+    }
+    100% {
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9);
+      box-shadow: 0 0 0 0 rgba(90, 153, 212, 0);
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+    70% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      box-shadow: 0 0 0 13px rgba(90, 153, 212, 0);
+    }
+    100% {
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9);
+      box-shadow: 0 0 0 0 rgba(90, 153, 212, 0);
+    }
+  }
+/*Aqui termina el nuevo encabezado*/
 
 .Contenido
 {
@@ -54,7 +358,7 @@ footer
     position: relative;
     
     float: left;
-    height: 8vh;
+    height: 5vh;
     bottom: 10%;
     left: 1%;
 }
@@ -78,5 +382,10 @@ footer
     display: block;
     padding-left: 1vw;
     top: 0em;
-    color: white;
+    
+}
+li
+{
+    
+    font-family: Arial, Helvetica, sans-serif;
 }
