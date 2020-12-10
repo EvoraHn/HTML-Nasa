@@ -18,10 +18,11 @@
     if(login[0].nombreDeUsuario === "admin" && login[0].contraseña === "admin" )
     {
       alert("Acceso permitido");
+      return true;
     }
     else
     {
       alert("Acceso denegado");
-      
+      return false;
     }
   };
