@@ -1,19 +1,27 @@
-$('.tabs').on('click', 'li a', function(e){
-    e.preventDefault();
-    var $tab = $(this),
-         href = $tab.attr('href');
-  
-     $('.active').removeClass('active');
-     $tab.addClass('active');
-  
-     $('.show')
-        .removeClass('show')
-        .addClass('hide')
-        .hide();
+
+
+
+  function validacionDeLogin()
+  {
     
-      $(href)
-        .removeClass('hide')
-        .addClass('show')
-        .hide()
-        .fadeIn(550);
-  });
+    const login =
+    [
+      {
+        nombreDeUsuario: document.getElementsByName("username")[0].value,
+        contraseña: document.getElementsByName("password")[0].value,
+
+      }
+    ];
+    //alert(login[0].nombreDeUsuario);
+
+
+    if(login[0].nombreDeUsuario === "admin" && login[0].contraseña === "admin" )
+    {
+      alert("Acceso permitido");
+    }
+    else
+    {
+      alert("Acceso denegado");
+      
+    }
+  };

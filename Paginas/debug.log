@@ -1,2 +1,4 @@
 [1103/221940.178:ERROR:directory_reader_win.cc(43)] FindFirstFile: El sistema no puede encontrar la ruta especificada. (0x3)
 [1122/102207.920:ERROR:directory_reader_win.cc(43)] FindFirstFile: El sistema no puede encontrar la ruta especificada. (0x3)
+[1210/112214.292:ERROR:directory_reader_win.cc(43)] FindFirstFile: El sistema no puede encontrar la ruta especificada. (0x3)
+[1210/120138.782:ERROR:file_io.cc(135)] WriteFile: Se está cerrando la canalización. (0xE8)

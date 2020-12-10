@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Estilos/LoginBlackStyle.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="../Javascript/loginBlack.js" ></script>
     <style>
         body {
             background-color: #303641;
@@ -18,15 +19,15 @@
 <body>
     <div id="container-login">
         <div id="title">
-            <i class="material-icons lock">lock</i> Login
+            <i class="material-icons lock">lock</i> Iniciar sesion
         </div>
 
-        <form>
+        <form action="./bienvenido.html" method="post" >
             <div class="input">
                 <div class="input-addon">
                     <i class="material-icons">face</i>
                 </div>
-                <input id="username" placeholder="Username" type="text" required class="validate" autocomplete="off">
+                <input name="username" id="username" placeholder="Nombre de usuario" type="text" required class="validate" autocomplete="off">
             </div>
 
             <div class="clearfix"></div>
@@ -35,27 +36,28 @@
                 <div class="input-addon">
                     <i class="material-icons">vpn_key</i>
                 </div>
-                <input id="password" placeholder="Password" type="password" required class="validate" autocomplete="off">
+                <input name="password" id="password" placeholder="contraseña" type="password" required class="validate" autocomplete="off">
             </div>
 
             <div class="remember-me">
                 <input type="checkbox">
-                <span style="color: #DDD">Remember Me</span>
+                <span style="color: #DDD">Recuerdamela</span>
             </div>
-
-            <input type="submit" value="Log In" />
+            
+            <input  onclick="validacionDeLogin()" type="submit" value="Log In" />
+        
         </form>
 
         <div class="forgot-password">
-            <a href="#">Forgot your password?</a>
+            <a href="#">Olvidaste tu contraseña?</a>
         </div>
         <div class="privacy">
             <a href="#">Privacy Policy</a>
         </div>
 
         <div class="register">
-            Don't have an account yet?
-            <a href="./register.html"><button id="register-link">Register here</button></a>
+            No tienes una cuenta aun?
+            <a href="./register.html"><button id="register-link">Registrarme</button></a>
         </div>
     </div>
 </body>
