@@ -1,7 +1,4 @@
-
-
-
-  function validacionDeLogin()
+function validacionDeLogin()
   {
     
     const login =
