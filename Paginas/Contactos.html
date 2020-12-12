@@ -11,25 +11,42 @@
 <div style="align-items: center; flex-direction: column ;display: flex;" >
     <div class="Encabezado"> 
         
-        <a href="../Index.html">
-            <img class="Logo" src="../Imagenes/nasa.png" />
-        </a>
-<!--Acerca De     Gallery     Contactos      Investigaciones-->
-        <ul class="MenuDePaginas" >
-            <li>
+        <nav id="fsr-top-bar">
+            <ul>
+               <li>
+                  <a href="#" tabindex="-1">
+                     <svg class="fsr-ic-top-bar-close" role="presentation" aria-hidden="true">
+                        <use xlink:href="#svg-arrow-left"></use>
+                     </svg>
+                     <span class="fsr-top-bar-btn-close-title">Close</span>
+                  </a>
+               </li>
+               <li>
+                <a href="../Index.html">
+                    <img class="Logo" src="../Imagenes/nasa.png" />
+                </a>
+               </li>
+               <li>
                 <a href="./About.html">Acerca de nosotros</a>
             </li>
             <li>
                 <a href="./gallery.html">Galeria</a>
             </li>
             <li>
-                <a style="color: #E650B1;" href="./Contactos.html">Contacto</a>
+                <a style="color: #E650B1;"  href="./Contactos.html">Contacto</a>
             </li>
             <li>
                 <a href="./Live.html">NASA Live</a>
             </li>
 
-        </ul>
+               <li>
+                  <a id="fsr-top-bar-btn-open" href="#fsr-top-bar">
+                    
+                     <span class="fsr-top-bar-btn-opwqqqqqqqqqqen-title"> Menu</span>
+                  </a>
+               </li>
+            </ul>
+         </nav>
     </div>
     <!--!Informacion de la pagina-->
     <div  class="Contenido" >
@@ -52,7 +69,7 @@
     </div>
     
 
-<div class="SalaDeRedaccion">
+<div style="overflow: auto; " class="SalaDeRedaccion">
     <table style="margin: 2vw;">
         <thead>
             <caption>
