@@ -39,8 +39,8 @@ function RegistroDeUnaEstrella()
         <p>
         
             <P>Mapa Estelar: </p>
-            <input style="left: 2vw;" value="si" type="radio" name="MapaEstelar" id="si"> <span> Si </span> 
-            <input style="left: 2vw;" value="no" type="radio" name="MapaEstelar" id="no"> <span> No </span> 
+            <input style="left: 2vw;"  value="si" type="radio" name="MapaEstelar" id="si"> <span class="radioButton" > Si </span> 
+            <input style="left: 2vw;"  value="no" type="radio" name="MapaEstelar" id="no"> <span class="radioButton" > No </span> 
         </p>
         
     </form>
